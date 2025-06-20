@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yazıcı Ahşap Palet | Kurumsal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="top-header">
+    <div class="logo">
+      <img src="JPG/logo.jpg" alt="Yazıcı Ahşap Palet Logo" />
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div><div></div><div></div>
+    </div>
+    <nav>
+      <ul id="menu">
+        <li><a href="#">Anasayfa</a></li>
+        <li><a href="#hakkimizda">Hakkımızda</a></li>
+        <li><a href="#urunler">Ürünler</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-slideshow">
+    <img src="JPG/slider1.jpg" class="slide active">
+    <img src="JPG/slider2.jpg" class="slide">
+    <img src="JPG/slider3.jpg" class="slide">
+  </div>
+
+  <div class="hero-overlay">
+    <div class="hero-content"> <!-- ✅ hero-content eklendi -->
+
+      <div class="hero-contact">
+        <div class="contact-box">
+          <img src="JPG/phone.png" alt="Telefon">
+          <h3>Telefon</h3>
+          <p><a href="tel:05337738915">0533 773 8915</a></p>
+        </div>
+
+        <div class="contact-box">
+          <img src="JPG/mail.png" alt="Mail">
+          <h3>Email</h3>
+          <p><a href="mailto:yazicipalet@gmail.com">yazicipalet@gmail.com</a></p>
+        </div>
+
+        <div class="contact-box">
+          <img src="JPG/address.png" alt="Adres">
+          <h3>Adres</h3>
+          <p>Ümraniye / İstanbul</p>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <h1>İkinci El Palet, Ahşap Sandık ve Ahşap Palet Üretimi</h1>
+        <p>Her türlü ikinci el palet alım-satımı, Ahşap Sandık üretimi ve Özel Ölçü Ahşap Palet üretimi çözümleriyle hizmetinizdeyiz.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Hakkımızda Bölümü -->
+<section id="hakkimizda" style="padding:80px 40px; background-color:#fff; text-align:center;">
+  <h2 style="font-size:36px; color:var(--ana-renk); margin-bottom:20px;">Hakkımızda</h2>
+  <p style="max-width:900px; margin:auto; font-size:18px;">
+    Yazıcı Ahşap Palet olarak yıllardır ahşap ve plastik palet üretiminde kaliteli ve ekonomik çözümler sunuyoruz. 
+    Geniş ürün yelpazemiz ve müşteri odaklı hizmet anlayışımızla sektörde güvenle hizmet vermekteyiz.
+  </p>
+</section>
+
+<!-- Ürünler Bölümü -->
+<section id="urunler" style="padding:80px 40px; background-color:#f9f6f2; text-align:center;">
+  <h2 style="font-size:36px; color:var(--ana-renk); margin-bottom:50px;">Ürünlerimiz</h2>
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:40px;">
+    <div style="width:320px; background:#fff; border-radius:16px; box-shadow:0 4px 10px rgba(0,0,0,0.2); padding:20px;">
+      <img src="JPG/urun1.jpg" style="width:100%; height:220px; object-fit:cover; border-radius:12px; margin-bottom:15px;">
+      <h3 style="color:var(--ana-renk); font-size:22px;">Euro Palet</h3>
+      <p>Dayanıklı, standart ve kaliteli euro paletler.</p>
+    </div>
+    <div style="width:320px; background:#fff; border-radius:16px; box-shadow:0 4px 10px rgba(0,0,0,0.2); padding:20px;">
+      <img src="JPG/urun2.jpg" style="width:100%; height:220px; object-fit:cover; border-radius:12px; margin-bottom:15px;">
+      <h3 style="color:var(--ana-renk); font-size:22px;">Plastik Palet</h3>
+      <p>Hafif, hijyenik ve lojistikte ideal plastik paletler.</p>
+    </div>
+    <div style="width:320px; background:#fff; border-radius:16px; box-shadow:0 4px 10px rgba(0,0,0,0.2); padding:20px;">
+      <img src="JPG/urun3.jpg" style="width:100%; height:220px; object-fit:cover; border-radius:12px; margin-bottom:15px;">
+      <h3 style="color:var(--ana-renk); font-size:22px;">Ahşap Sandık</h3>
+      <p>Projeye özel, sağlam ahşap sandık üretimi.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Neden Biz Bölümü -->
+<section style="padding:80px 40px; background-color:white; text-align:center;">
+  <h2 style="font-size:36px; color:var(--ana-renk); margin-bottom:40px;">Neden Bizi Tercih Etmelisiniz?</h2>
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:40px;">
+    <div style="width:300px; background:#f4f1ee; padding:30px; border-radius:16px;">
+      <h3>Kalite Garantisi</h3>
+      <p>Her zaman yüksek kaliteli malzeme ve işçilik.</p>
+    </div>
+    <div style="width:300px; background:#f4f1ee; padding:30px; border-radius:16px;">
+      <h3>Hızlı Teslimat</h3>
+      <p>Terminlere tam uyum, hızlı ve güvenilir teslimat.</p>
+    </div>
+    <div style="width:300px; background:#f4f1ee; padding:30px; border-radius:16px;">
+      <h3>Müşteri Memnuniyeti</h3>
+      <p>Müşteri odaklı hizmet anlayışıyla tam destek.</p>
+    </div>
+  </div>
+</section>
+<!-- İletişim Bölümü -->
+<section id="iletisim" style="padding:80px 40px; background-color:#f9f6f2; text-align:center;">
+  <h2 style="font-size:36px; color:var(--ana-renk); margin-bottom:40px;">İletişim</h2>
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:40px;">
+    <div style="background:white; width:300px; padding:30px; border-radius:16px; box-shadow:0 4px 10px rgba(0,0,0,0.15);">
+      <img src="JPG/phone.png" style="width:50px; margin-bottom:20px;">
+      <h3>Telefon</h3>
+      <p><a href="tel:05337738915" style="color:var(--ana-renk); text-decoration:none;">0533 773 8915</a></p>
+    </div>
+
+    <div style="background:white; width:300px; padding:30px; border-radius:16px; box-shadow:0 4px 10px rgba(0,0,0,0.15);">
+      <img src="JPG/mail.png" style="width:50px; margin-bottom:20px;">
+      <h3>Email</h3>
+      <p><a href="mailto:yazicipalet@gmail.com" style="color:var(--ana-renk); text-decoration:none;">yazicipalet@gmail.com</a></p>
+    </div>
+
+    <div style="background:white; width:300px; padding:30px; border-radius:16px; box-shadow:0 4px 10px rgba(0,0,0,0.15);">
+      <img src="JPG/address.png" style="width:50px; margin-bottom:20px;">
+      <h3>Adres</h3>
+      <p>Ümraniye / İstanbul</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer style="background-color:var(--ikincil-renk); color:white; padding:20px; text-align:center; font-size:16px;">
+  © 2025 Yazıcı Ahşap Palet - Tüm Hakları Saklıdır.
+</footer>
+
+<!-- Urunlerimiz Butonu -->
+<a href="#urunler" class="scroll-to-products">
+  Ürünlerimiz ➤
+</a>
+
+<!-- Arama Efekti -->
+<a href="tel:05337738915" class="scroll-call">
+  <i class="fas fa-phone"></i>
+</a>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+  }
+
+  // Hero slayt geçişi
+  const slides = document.querySelectorAll('.hero-slideshow .slide');
+  let currentSlide = 0;
+
+  setInterval(() => {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }, 5000); // 5 saniyede bir geçiş
+</script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+:root {
+  --ana-renk: #7b5e57;
+  --ikincil-renk: #a1866f;
+  --acik-renk: #f4f1ee;
+  --yazi-renk: #333;
+  --accent: #dec5a4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--acik-renk);
+  color: var(--yazi-renk);
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--ana-renk);
+  padding: 10px 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+/* Responsive Menü */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    background-color: var(--ana-renk);
+    border-radius: 10px;
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 650px;
+  overflow: hidden;
+}
+
+/* Slayt görseller */
+.hero {
+  position: relative;
+  min-height: 650px;
+  height: auto; /* ✅ içeriğe göre genişlesin */
+  overflow: visible;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.hero-slideshow .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero-slideshow .slide.active {
+  opacity: 1;
+}
+
+/* Üstte duran kutular için şeffaf arkaplan */
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.65);
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* DİKEY ORTALAMA */
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-text {
+  margin-top: 40px;
+  max-width: 800px;
+  padding: 0 20px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: var(--yazi-renk);
+}
+/* Kutuları hizala */
+.hero-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+}
+
+.contact-box {
+  background-color: rgba(255, 255, 255, 0.92);
+  width: 300px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.contact-box img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.contact-box h3 {
+  margin-bottom: 10px;
+  color: var(--ana-renk);
+}
+
+.contact-box p a {
+  color: var(--ana-renk);
+  text-decoration: none;
+}
+
+/* Mobilde kutular alt alta */
+@media (max-width: 768px) {
+  .hero-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Yumuşak Kaydırma */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Urunler Yazisi */
+.scroll-to-products {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background-color: var(--ana-renk);
+  color: white;
+  font-size: 17px;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  /* animasyon */
+  animation: floatInFromTop 1.2s ease-out 0s infinite;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+}
+
+@keyframes floatInFromTop {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  90% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+}
+
+/* Ara Yazisi */
+.scroll-call {
+  font-size: 42px;
+  color: black;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 999;
+  text-decoration: none;
+  animation: floatCallFromTop 7s ease-out infinite;
+  transition: color 0.3s ease;
+}
+
+.scroll-call:hover {
+  color: var(--ikincil-renk);
+}
+
+/* Animasyon */
+@keyframes floatCallFromTop {
+  0% {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  90% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 26px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .contact-box {
+    width: 90%;
+  }
+
+  .scroll-call {
+    font-size: 32px;
+    bottom: 80px;
+  }
+
+  .scroll-to-products {
+    font-size: 15px;
+    padding: 10px 20px;
+    bottom: 80px;
+  }
+}
+
