@@ -291,19 +291,33 @@ html {
 }
 
 @media (max-width: 768px) {
-  .logo img{
-		width: 50px;
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
   }
 
-  .logo{
-		flex: 1;
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
+  .logo {
+    display: flex;
+    justify-content: flex-start; /* ✅ içeriği sola hizala */
+    align-items: center;
   }
 
-  .top-header{
-		padding: 10px 20px;
+  .logo img {
+    width: 140px; /* logoyu mobilde küçültmek istersen */
+  }
+
+  .hamburger {
+    position: absolute;
+    right: 20px; /* ✅ en sağa yapıştırır */
+    top: 50%;
+    transform: translateY(-50%); /* dikey ortalama */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
 
   .hero {
@@ -357,7 +371,7 @@ html {
   .mobile-phone a,
   .mobile-mail a {
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .mobile-mail {
@@ -375,7 +389,7 @@ html {
   .scroll-to-products{
 	font-size: 14px;
 	padding: 10px 18px;
-	bottom: 70px;
+	bottom: 35px;
   }
 }
 
