@@ -292,7 +292,7 @@ html {
 
 @media (max-width: 768px) {
   .logo img{
-		width: 100px;
+		width: 50px;
   }
 
   .logo{
@@ -305,7 +305,7 @@ html {
   .top-header{
 		padding: 10px 20px;
   }
-  
+
   .hero {
     position: relative;
     min-height: 100vh; /* 👈 ekran boyunu tam kaplar */
