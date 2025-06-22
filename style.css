@@ -384,10 +384,25 @@ html {
   }
 
   .mobile-desc {
-  color: black;
-  font-weight: 700;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6)
-}
+  	font-size: 19px;
+	font-weight: 700;
+  	padding: 0 10px;
+  	max-width: 400px;
+  	margin: 0 auto;
+  	color: black;
+  	list-style: none;
+  }
+  
+  .mobile-desc li {
+  	display: flex;
+  	align-items: flex-start; /* üstten hizalama */
+  	gap: 8px; /* emoji ile metin arası boşluk */
+  	font-size: 18px; /* büyük yazı */
+  	font-weight: 700; /* kalın yazı */
+  	margin-bottom: 10px;
+  	line-height: 1.6;
+  }
+
 
   .scroll-to-products{
 	font-size: 14px;
