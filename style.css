@@ -289,8 +289,19 @@ html {
     opacity: 0;
   }
 }
-
+.mobile-only {
+  display: none;
+}
 @media (max-width: 768px) {
+
+  .hero-slideshow {
+    display: none !important;
+  }
+
+  .hero-contact {
+    display: none !important;
+  }
+
   .top-header {
     display: flex;
     justify-content: space-between;
@@ -320,100 +331,55 @@ html {
     cursor: pointer;
   }
 
-  .hero {
-    position: relative;
-    min-height: 100vh; /* 👈 ekran boyunu tam kaplar */
-    padding: 0;
-  }
-
-  .hero-slideshow {
-    display: block;
-  }
-
-  .hero-slideshow .slide {
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: 100%;
-  }
-
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; /* 👈 tam kaplasın */
-    background-color: rgba(0, 0, 0, 0.55); /* 👈 koyu şeffaflık */
-    z-index: 1;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .hero-contact {
-    display: none;
-  }
-
   .mobile-only {
+	font-size: 20px;
     display: block;
-    color: white;
+    background: linear-gradient(135deg, #f4f1ee, #e8ddd4);
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    text-align: center;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .mobile-phone {
-    font-size: 20px;
+  .mobile-phone,
+  .mobile-mail {
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   .mobile-phone a,
   .mobile-mail a {
-  	color: black;
-  	background-color: rgba(255, 255, 255, 1); /*silinecek*/
-  	padding: 4px 10px;
- 	border-radius: 8px;
-  	text-decoration: none;
-  	font-weight: 700;
-  }
-
-  .mobile-mail {
-    font-size: 18px;
-    margin-bottom: 20px;
+    color: var(--ana-renk);
+    text-decoration: underline;
   }
 
   .mobile-desc {
-  	font-size: 18px;
-  	font-weight: 700;
-  	padding: 0 10px;
- 	max-width: 400px;
-  	margin: 0 auto;
-  	color: black;
-  	list-style: none;
- }
+    list-style: none;
+    padding-left: 0;
+    font-size: 16px;
+    margin-top: 15px;
+  }
 
- .mobile-desc li {
-	display: flex;
-	align-items: flex-start;
-	gap: 8px;
-	padding-left: 1.6em;
-	margin-bottom: 12px;
-	line-height: 1.6;
- }
+  .mobile-desc li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+	font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    gap: 8px;
+  }
 
- .mobile-desc li::before{
-	content: "✔";
-	color: #006d40;
-  	font-size: 1.2em;
-	flex-shrink: 0;
-  	margin-top: 2px;
- }
-
-  .scroll-to-products{
-	font-size: 14px;
-	padding: 10px 18px;
-	bottom: 35px;
+  .mobile-desc li::before {
+    content: "✔";
+    color: var(--ana-renk);
+	font-size: 20px;
+    font-weight: bold;
   }
 }
 
