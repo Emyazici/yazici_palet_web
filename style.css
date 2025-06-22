@@ -384,25 +384,24 @@ html {
   }
 
   .mobile-desc {
-  	font-size: 19px;
-	font-weight: 700;
+  	font-size: 18px;
+  	font-weight: 700;
   	padding: 0 10px;
-  	max-width: 400px;
+ 	max-width: 400px;
   	margin: 0 auto;
   	color: black;
   	list-style: none;
-  }
-  
-  .mobile-desc li {
-  	display: flex;
-  	align-items: flex-start; /* üstten hizalama */
-  	gap: 8px; /* emoji ile metin arası boşluk */
-  	font-size: 18px; /* büyük yazı */
-  	font-weight: 700; /* kalın yazı */
-  	margin-bottom: 10px;
-  	line-height: 1.6;
-  }
+ }
 
+ .mobile-desc li {
+   display: flex;
+   align-items: flex-start;
+   gap: 8px;             /* Emoji ile yazı arası boşluk */
+   line-height: 1.6;
+   margin-bottom: 12px;
+   text-indent: -1.1em;  /* Çok satırlı hizalama düzelsin */
+   padding-left: 1.1em;  /* İlk satırla alt satır aynı hizada olsun */
+ }
 
   .scroll-to-products{
 	font-size: 14px;
