@@ -394,13 +394,20 @@ html {
  }
 
  .mobile-desc li {
-   display: flex;
-   align-items: flex-start;
-   gap: 8px;             /* Emoji ile yazı arası boşluk */
-   line-height: 1.6;
-   margin-bottom: 12px;
-   text-indent: -1.1em;  /* Çok satırlı hizalama düzelsin */
-   padding-left: 1.1em;  /* İlk satırla alt satır aynı hizada olsun */
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+	padding-left: 1.6em;
+	margin-bottom: 12px;
+	line-height: 1.6;
+ }
+
+ .mobile-desc li::before{
+	content: "✔";
+	color: #006d40;
+  	font-size: 1.2em;
+	flex-shrink: 0;
+  	margin-top: 2px;
  }
 
   .scroll-to-products{
