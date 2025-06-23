@@ -404,3 +404,73 @@ html {
     display: none;
   }
 }
+
+.contact-section {
+  padding: 80px 40px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  color: var(--ana-renk);
+  margin-bottom: 40px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  align-items: stretch;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background-color: #f9f6f2;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.info-item i {
+  font-size: 28px;
+  color: var(--ana-renk);
+  margin-top: 5px;
+  min-width: 30px;
+}
+
+.info-item a {
+  color: var(--ana-renk);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-map {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  height: 360px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+}
+
