@@ -537,6 +537,10 @@ nav a:hover {
     cursor: pointer;
   }
 
+  .hamburger div {
+    background-color: var(--ana-renk);
+  }
+
   .mobile-only {
     font-size: 18px;
     display: block;
@@ -956,11 +960,23 @@ nav a:hover {
   background: var(--gradient-primary);
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 30px 20px;
   margin-top: 0;
   font-size: 14px;
   font-weight: 500;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-top: 10px;
+  font-size: 13px;
+  opacity: 0.9;
+  line-height: 1.6;
 }
 
 /* İletişim Bölümü */
@@ -1149,6 +1165,10 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+  }
+
+  .hamburger div {
+    background-color: white !important;
   }
 
   .mobile-only {

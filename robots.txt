@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://yaziciahsappalet.com/sitemap.xml
+
+# Crawl-delay for bots
+Crawl-delay: 1
+
+# Specific directives for common bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block access to sensitive areas (if any)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Contact info
+# Contact: yazicipalet@gmail.com

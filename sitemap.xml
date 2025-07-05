@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Ana Sayfa -->
+  <url>
+    <loc>https://yaziciahsappalet.com/</loc>
+    <lastmod>2025-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://yaziciahsappalet.com/JPG/logo_1.png</image:loc>
+      <image:title>Yazıcı Ahşap Palet Logo</image:title>
+      <image:caption>Euro palet, plastik palet, ahşap sandık üretimi - İstanbul</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://yaziciahsappalet.com/JPG/slider1.jpg</image:loc>
+      <image:title>Euro Palet Üretim Tesisi</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://yaziciahsappalet.com/JPG/urun1.jpg</image:loc>
+      <image:title>Euro Palet Ürünleri</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://yaziciahsappalet.com/JPG/urun2.jpg</image:loc>
+      <image:title>Plastik Palet Ürünleri</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://yaziciahsappalet.com/JPG/urun3.jpg</image:loc>
+      <image:title>Ahşap Sandık Ürünleri</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Ürünler Sayfası -->
+  <url>
+    <loc>https://yaziciahsappalet.com/#urunler</loc>
+    <lastmod>2025-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Hakkımızda Sayfası -->
+  <url>
+    <loc>https://yaziciahsappalet.com/#hakkimizda</loc>
+    <lastmod>2025-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- İletişim Sayfası -->
+  <url>
+    <loc>https://yaziciahsappalet.com/#iletisim</loc>
+    <lastmod>2025-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+</urlset>
